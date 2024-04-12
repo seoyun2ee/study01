@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+}
+button{margin: 5px;}
+.alert-box{
+background-color:rgba(255, 220, 255, 0.854) ;
+color: black;
+border-radius: 5px;
+padding: 20px;
+display: none;
+width: 50%;
+}
+
+
+.alert-box1{
+    background-color:rgba(231, 59, 231, 0.854) ;
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+    display: none;
+    width: 50%;
+    }

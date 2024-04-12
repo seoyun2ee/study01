@@ -8,22 +8,39 @@
 </head>
 
 <body>
+    <div class="container">
     <!-- <h2 id="hello">안녕하세요</h2>
     <h2 id="hi">올때 메로나</h2>
  -->
 
     <div class="alert-box" id="show">
         alert box
-        <button onclick="document.getElementById('show').style.display='none'">close</button>
+        <button onclick="clickfc('none')">close</button>
     </div>
+    <button onclick="clickfc('block')">button</button>
     
-    <button onclick="
-    document.getElementById('show').style.display='block'
-    ">button</button>
+
     
+    <div class="alert-box1" id="show1">
+        alert box
+        <button onclick="clickfc1('none')">close</button>
+    </div>
+    <button onclick="clickfc1('block')">button1</button>
+</div>
 </body>
-<script>
-    
+
+
+<script> 
+//function 문법 긴 코드를 짧은걸로 변경할 때
+function clickfc(hole){
+    document.getElementById('show').style.display=hole;
+}
+function clickfc1(hole){
+    document.getElementById('show1').style.display=hole;
+}
+
+
+
 //  document.getElementById('hello').innerHTML='올때 바밤바';
 //  document.getElementById('hi').innerHTML='올떄 비비빅';
 //  document.getElementById('hello').style.color='#808080';
@@ -36,5 +53,8 @@
 
  //document.getElementById('hello').style.color='#808080'; 이거는 색상코드도 가능하네...
  
- </script>
+
+//변경할 html이 있으면 그거 하단에 js 코딩해야 한다.
+
+</script>
 </html>
